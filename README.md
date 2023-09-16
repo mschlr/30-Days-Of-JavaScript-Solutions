@@ -1,5 +1,6 @@
 JavaScript snippets and other files thrown together for a programming challenge
-using (as of now) `node`-only on the terminal prompt.
+using (as of now) `node`-only on the terminal prompt or alternatively a web-
+browser's console.
 
 
 # Progress
@@ -7,8 +8,8 @@ using (as of now) `node`-only on the terminal prompt.
 - [x] Intro
 - [x] Data Types
 - [x] Booleans, Operators and Date
-- [ ] Conditionals
-- [ ] Arrays
+- [x] Conditionals
+- [x] Arrays
 - [ ] Loops
 - [ ] Functions
 - [ ] Objects

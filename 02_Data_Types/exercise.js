@@ -1,4 +1,5 @@
 // Day 2: Exercises
+
 // Level 1
 
 // 1. Declare a variable named challenge and assign it to

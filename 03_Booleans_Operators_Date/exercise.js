@@ -1,4 +1,5 @@
 // Day 3: Exercises
+
 // Level 1 - is it boring yet?
 
 const bernoulli = {
