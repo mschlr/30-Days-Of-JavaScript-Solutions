@@ -10,7 +10,7 @@ browser's console.
 - [x] Booleans, Operators and Date
 - [x] Conditionals
 - [x] Arrays
-- [ ] Loops
+- [x] Loops
 - [ ] Functions
 - [ ] Objects
 - [ ] Higher order Functions

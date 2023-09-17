@@ -29,8 +29,8 @@ const countries = [
 // 1.-3. Create a defined array with random numbers
 console.log(' - Level 1 - ')
 const array = Array(10)
-  .fill()
-  .map(() => Math.floor(Math.random() * 10 + 1))
+	.fill()
+	.map(() => Math.floor(Math.random() * 10 + 1))
 console.log(array)
 
 // 4. Get the first item, the middle item and the last item of the array
