@@ -138,8 +138,8 @@ console.log([u, v]); delete u; delete v
 // 13. Random number generator for an array.
 //     Didn't we do that already on Day 5?
 const array1 = Array(5)
-  .fill()
-  .map(() => Math.floor(Math.random() * 10 + 1))
+	.fill()
+	.map(() => Math.floor(Math.random() * 10 + 1))
 console.log(array1)
 
 // Alternatively:
@@ -236,7 +236,7 @@ console.log(webTechs.map(x => [ x, x.length]))
 let mernArray = ['MongoDB', 'Express', 'React', 'Node']
 let mern = ''
 for (const x of mernArray) {
-   mern += x.slice(0, 1)
+	mern += x.slice(0, 1)
 }
 console.log(mern)
 
@@ -250,7 +250,7 @@ let fruits = ['banana', 'orange', 'mango', 'lemon']
 let revFruits = [];
 
 for (let i = fruits.length - 1; i >= 0; i--) {
-   revFruits.push(fruits[i])
+	revFruits.push(fruits[i])
 }
 console.log(revFruits)
 

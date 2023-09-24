@@ -12,9 +12,9 @@ const countries = [
 	'Ireland',
 	'Japan',
 	'Kenya'
-  ]
+]
 
-  const webTechs = [
+const webTechs = [
 	'HTML',
 	'CSS',
 	'JavaScript',
@@ -22,7 +22,7 @@ const countries = [
 	'Redux',
 	'Node',
 	'MongoDB'
-  ]
+]
 
 // Level 1
 
