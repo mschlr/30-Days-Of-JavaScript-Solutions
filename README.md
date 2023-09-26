@@ -11,7 +11,7 @@ browser's console.
 - [x] Conditionals
 - [x] Arrays
 - [x] Loops
-- [ ] Functions
+- [x] Functions
 - [ ] Objects
 - [ ] Higher order Functions
 - [ ] Sets and Maps

@@ -243,11 +243,11 @@ function randomHexaNumberGenerator() {
 }
 // 18. Generate 7 alphanumeric characters
 const characters ='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
+const chars_l = characters.length
 function userIdGenerator() {
 	let result = ''
-	const l = characters.length
 	for(let i = 0; i < 7; i++) {
-		result += characters.charAt(Math.floor(Math.random() * l))
+		result += characters.charAt(Math.floor(Math.random() * chars_l))
 	}
 	return result
 }
@@ -256,6 +256,177 @@ function userIdGenerator() {
 // Level 3
 console.log(' - Level 3 - ')
 
+// 1. userIdGenerator with user prompt
+function userIdGeneratorPrompt() {
+	let id_len = prompt("Define length of the random alphanumeric user ID:", 7)
+	let id_num = prompt("How many random alphanumeric user ID's are needed?:", 3)
+	const id_array = Array(Number(id_num)).fill('')
+
+	for(let i = 0; i < id_num; i++) {
+		for(let j = 0; j < id_len; j++) {
+			id_array[i] += characters.charAt(Math.floor(Math.random() * chars_l))
+		}
+	}
+	return id_array
+}
+
+// 2. rgbColorGenerator to output the following with random values:
+//    rgb(125,244,255)
+function rgbColorGenerator() {
+	let r = Math.floor(Math.random() * 255) + 1
+	let g = Math.floor(Math.random() * 255) + 1
+	let b = Math.floor(Math.random() * 255) + 1
+
+	return (`rgb(${r},${g},${b})`)
+}
+
+// 3. Output of an array of `HexaColors`
+function arrayOfHexaColors(int) {
+	a = new Array(int).fill()
+	return a.map(() => randomHexaNumberGenerator())
+}
+
+// 4. Output of an array of `RGB-Colors`
+function arrayOfRgbColors(int) {
+	a = new Array(int).fill()
+	return a.map(() => rgbColorGenerator())
+}
+
+// 5. Conversion of HEX into RGB
+//    input: `#FFFFFF`, output: `16777215`
+function convertHexaToRgb(hex) {
+	s1 = parseInt(hex.slice(1,3), 16)
+	s2 = parseInt(hex.slice(3,5), 16)
+	s3 = parseInt(hex.slice(5,7), 16)
+	return console.log(`rgb(${s1},${s2},${s2})`)
+}
+
+// 6. Conversion of RGB into HEX, reverse task 5
+function convertRgbToHexa(rgb) {
+	a = rgb.match(/\d+/g)
+	r = Number(a[0]).toString(16)
+	g = Number(a[1]).toString(16)
+	b = Number(a[2]).toString(16)
+	return console.log(`#${r}${g}${b}`)
+}
+
+// 7. Take arg1 'hexa' or 'rgb' and arg2 as int
+function generateColors(code, int) {
+	if (code == 'hexa') {
+		if (int == 1) { return randomHexaNumberGenerator() }
+		console.log(arrayOfHexaColors(int))
+	} else if (code == 'rgb') {
+		if (int == 1) { return rgbColorGenerator() }
+		console.log(arrayOfRgbColors(int))
+	} else { console.log('Incorrect arguments.')}
+}
+
+// 8. Shuffle an input array using the Fisher-Yates shuffle algorithm
+function shuffleArray(array) {
+	var i = array.length, j, temp
+	while(--i > 0) {
+		j = Math.floor(Math.random() * (i + 1))
+		temp = array[j]
+		array[j] = array[i]
+		array[i] = temp
+	}
+	return array
+}
+
+// 9. Calculate factorial from an integer
+function factorial(int) {
+	if (int == 0) { return 1 }
+	if (int < 0) { return undefined }
+
+	let i = int
+	while (i > 2) {
+		--i
+		int *= i
+	}
+	return int
+}
+
+// 10. Check if parameter is `empty`
+//     https://stackoverflow.com/a/53751866
+function isEmpty(value) {
+	return (
+		(value == null) ||
+		(value.hasOwnProperty('length') && value.length === 0) ||
+		(value.constructor === Object && Object.keys(value).length === 0)
+	)
+}
+
+// 11. call sumUp()
+sumUp(1,2,3,4,5,6,7,8,9,10)
+
+// 12. sum up all items in an array with type check
+function sumOfArrayItems(array) {
+	let sum = 0
+	for(let i = 0; i < array.length; i++) {
+		if (typeof array[i] !== 'number') { return alert() }
+		sum += array[i]
+	}
+	return sum
+}
+
+// 13. average of parameters in an array
+function average(array) {
+	let sum = 0
+	for(let i = 0; i < array.length; i++) {
+		if (typeof array[i] !== 'number') { return alert() }
+		sum += array[i]
+	}
+	return sum / array.length
+}
+
+// 14. modify fifth string-element of the array to uppercase
+function modifyArray(array) {
+	if (array.length < 5 || typeof array[4] !== 'string') { return alert() }
+	array[4] = array[4].toUpperCase()
+	return array
+}
+
+// 15.
+function isPrime(num) {
+	var sqrtnum=Math.floor(Math.sqrt(num));
+	var prime = num != 1;
+	for(var i=2; i < sqrtnum+1; i++) {
+		if(num % i == 0) {
+			prime = false
+			break
+		}
+	}
+	return prime
+}
+
+// 16.
+function isUnique(array) {
+	return (array.length == new Set(array).size)
+}
+
+// 17.
+function uniqueType(array) {
+	return (new Set(array.map(x => typeof x)).size < 2)
+}
+
+// 18. Check if input is an allowed variable
+function isValidVariable(arg) {
+	let pattern = /^([A-Za-z_$]+[A-Za-z_$\d]+)/
+	return (pattern.test(arg))
+}
+
+// 19. Return Array of length 7 with random numbers from 0-9
+function sevenRandomNumbers(){
+	const array = Array(7)
+	.fill()
+	.map(() => Math.floor(Math.random() * 10))
+
+	return array
+}
+
+// 20.
+countries = ['Switzerland', 'Sweden']
+reverseArray(countries)
 
 // Local helper function
 function alert() {
