@@ -12,7 +12,7 @@ browser's console.
 - [x] Arrays
 - [x] Loops
 - [x] Functions
-- [ ] Objects
+- [x] Objects
 - [ ] Higher order Functions
 - [ ] Sets and Maps
 - [ ] Destructuring and Spreading
