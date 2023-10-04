@@ -13,7 +13,7 @@ browser's console.
 - [x] Loops
 - [x] Functions
 - [x] Objects
-- [ ] Higher order Functions
+- [x] Higher order Functions
 - [ ] Sets and Maps
 - [ ] Destructuring and Spreading
 - [ ] Regular Expressions
