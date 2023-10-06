@@ -411,7 +411,7 @@ function uniqueType(array) {
 
 // 18. Check if input is an allowed variable
 function isValidVariable(arg) {
-	let pattern = /^([A-Za-z_$]+[A-Za-z_$\d]+)/
+	let pattern = /^([A-Za-z_$][A-Za-z_$\d]+)$/
 	return (pattern.test(arg))
 }
 

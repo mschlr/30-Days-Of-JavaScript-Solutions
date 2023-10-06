@@ -14,9 +14,9 @@ browser's console.
 - [x] Functions
 - [x] Objects
 - [x] Higher order Functions
-- [ ] Sets and Maps
-- [ ] Destructuring and Spreading
-- [ ] Regular Expressions
+- [x] Sets and Maps
+- [x] Destructuring and Spreading
+- [x] Regular Expressions
 - [ ] Console Object Methods
 - [ ] Error Handling
 - [ ] Classes
