@@ -17,10 +17,10 @@ browser's console.
 - [x] Sets and Maps
 - [x] Destructuring and Spreading
 - [x] Regular Expressions
-- [ ] Console Object Methods
-- [ ] Error Handling
-- [ ] Classes
-- [ ] JSON
+- [x] Console Object Methods
+- [x] Error Handling
+- [x] Classes
+- [x] JSON
 - [ ] Web Storages
 - [ ] Promises
 - [ ] Closures
