@@ -87,6 +87,7 @@ const users = {
 
 // 1.
 function getSkilled(obj) {
+	let numskills = 0
 	let currentmax = 0
 	let skilleduser = ''
 

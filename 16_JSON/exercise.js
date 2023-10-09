@@ -127,3 +127,20 @@ const txt = `{
 `
 
 let txtParsed = JSON.parse(txt)
+
+function getSkilled(obj) {
+	let numskills = 0
+	let currentmax = 0
+	let skilleduser = ''
+
+	for(const user of Object.keys(obj)) {
+		numskills = obj[user]['skills'].length
+		if (numskills > currentmax) {
+			currentmax = numskills
+			skilleduser = user
+		}
+	}
+	return skilleduser
+}
+
+getSkilled(txtParsed)
