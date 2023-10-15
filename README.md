@@ -21,7 +21,7 @@ browser's console.
 - [x] Error Handling
 - [x] Classes
 - [x] JSON
-- [ ] Web Storages
+- [x] Web Storages
 - [ ] Promises
 - [ ] Closures
 - [ ] Writing Clean Codes

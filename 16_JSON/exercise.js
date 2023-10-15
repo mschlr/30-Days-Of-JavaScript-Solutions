@@ -11,11 +11,11 @@ let age = 250; age = JSON.stringify(age)
 let isMarried = true; isMarried = JSON.stringify(isMarried)
 
 const student = {
-	firstName:'Asabeneh',
-	lastName:'Yetayehe',
-	age:250,
-	isMarried:true,
-	skills:['HTML', 'CSS', 'JS', 'React','Node', 'Python', ]
+	firstName: 'Asabeneh',
+	lastName: 'Yetayehe',
+	age: 250,
+	isMarried: true,
+	skills: ['HTML', 'CSS', 'JS', 'React','Node', 'Python']
 }
 let studentJSON = JSON.stringify(student)
 
